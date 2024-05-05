@@ -2,8 +2,8 @@ package linkedList.doubly;
 
 public class DoublyNode {
     int data;
-    DoublyNode next;
-    DoublyNode previous;
+    public DoublyNode next;
+    public DoublyNode previous;
 
     public DoublyNode(int data) {
         this.data = data;

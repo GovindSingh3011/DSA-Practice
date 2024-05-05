@@ -2,8 +2,8 @@ package linkedList.doubly;
 
 public class IntegerDoublyLinkedList implements DoublyLinkedList {
     int size = 0;
-    DoublyNode head;
-    DoublyNode tail;
+    public DoublyNode head;
+    public DoublyNode tail;
 
     //for check list is empty or not
     @Override
