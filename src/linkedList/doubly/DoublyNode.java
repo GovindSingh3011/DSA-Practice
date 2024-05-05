@@ -1,7 +1,7 @@
 package linkedList.doubly;
 
 public class DoublyNode {
-    int data;
+    public int data;
     public DoublyNode next;
     public DoublyNode previous;
 
