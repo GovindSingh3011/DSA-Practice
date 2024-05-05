@@ -4,16 +4,19 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
     int size;
     SinglyNode head;
 
+    //for check list is empty or not
     @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
+    //for find size of list
     @Override
     public int getSize() {
         return size;
     }
 
+    //for add node at beginning
     @Override
     public void addbeginning(int data) {
         if (isEmpty()) {
@@ -26,13 +29,14 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
         }
     }
 
+    //for add first node
     @Override
     public void addFirst(int data) {
         head = new SinglyNode(data);
         size++;
     }
 
-
+    //for add node at any location
     @Override
     public void add(int data) {
         if (isEmpty()) {
@@ -47,6 +51,7 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
         }
     }
 
+    //for remove first node
     @Override
     public int removeFirst() {
         if (head != null) {
@@ -56,6 +61,7 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
         return 0;
     }
 
+    //for remove from any location
     @Override
     public int remove(int data) {
 
@@ -87,7 +93,7 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
 
     }
 
-
+    //for search data from list
     @Override
     public SinglyNode search(int data) {
         SinglyNode currentNode = head;
@@ -100,6 +106,7 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
         return null;
     }
 
+    //for print list
     @Override
     public void print() {
         if (isEmpty()) {
