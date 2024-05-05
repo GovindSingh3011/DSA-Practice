@@ -89,8 +89,6 @@ public class IntegerSinglyLinkedList implements SinglyLinkedList {
 
             return tempNode.data;
         }
-
-
     }
 
     //for search data from list
